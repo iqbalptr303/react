@@ -1,11 +1,6 @@
 
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Carousel from 'react-bootstrap/Carousel';
-import Image1 from './img/image1.jpg'
-import Image2 from './img/image2.jpg'
-import Image3 from './img/image3.jpg'
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 function ImageAndTextExample() {
