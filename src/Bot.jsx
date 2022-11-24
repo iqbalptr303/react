@@ -9,40 +9,56 @@ import CardGroup from 'react-bootstrap/CardGroup';
 
 function GroupExample() {
   return (
-    <CardGroup>
-      <Card>
+    <>
+      {[
+        'Info',
+      ].map((variant) => (
+
+    <CardGroup >
+      <Card bg={variant.toLowerCase()}
+    key={variant}
+    text={variant.toLowerCase() === 'Info'}
+    className="mb-2"
+    border="dark">
         <Card.Img variant="top" src={Image1} width="100p"
               height="200" />
         <Card.Body>
           <Card.Title>Cinta</Card.Title>
           <Card.Text>
-          Hai Sayang terimakasih telah selalu mendampingi, memberikan support serta menyemangatiku. Kau cinta terbaikku! Selamat Ulang Tahun
-          </Card.Text>
+          Cinta mengajariku melihat dengan cara memejam dan mengerti tanpa perlu penjelasan</Card.Text>
         </Card.Body>
         <Card.Footer>
           <small className="text-muted">Last updated 40 mins ago</small>
         </Card.Footer>
       </Card>
-      <Card>
+      <Card bg={variant.toLowerCase()}
+    key={variant}
+    text={variant.toLowerCase() === 'Info'}
+    className="mb-2"
+    border="dark">
         <Card.Img variant="top" src={Image2} width="50p"
               height="200" />
         <Card.Body>
-          <Card.Title>Jadilah Pribadi Yang lebih baik</Card.Title>
+          <Card.Title>Damai</Card.Title>
           <Card.Text>
-            Tak banyak kata yang bisa diucapkan,jadilah pribadi yang lebih baik lagi di masa yang akan datang.{' '}
+            Jadilah pribadi yang lebih baik lagi di masa yang akan datang.{' '}
           </Card.Text>
         </Card.Body>
         <Card.Footer>
           <small className="text-muted">Last updated 20 mins ago</small>
         </Card.Footer>
-      </Card>
-      <Card>
+      </Card >
+      <Card bg={variant.toLowerCase()}
+    key={variant}
+    text={variant.toLowerCase() === 'info'}
+    className="mb-2"
+    border="dark">
         <Card.Img variant="top" src={Image3} width="100p"
               height="200" />
         <Card.Body>
           <Card.Title>Bahagia</Card.Title>
           <Card.Text>
-            Semoga dihari yang special mu,selalu menjadi hari bahagia,termanis,dan penuh kenangan dengan bertambahnya umur mu!
+            Semoga dihari yang special ini,selalu menjadi hari bahagia,termanis,dan penuh kenangan dengan bertambahnya umur mu!
           </Card.Text>
         </Card.Body>
         <Card.Footer>
@@ -50,6 +66,8 @@ function GroupExample() {
         </Card.Footer>
       </Card>
     </CardGroup>
+  ))}
+  </>
   );
 }
 
